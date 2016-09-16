@@ -16,7 +16,7 @@ function decode(string) {
     
     if (Number.isInteger(array[i])) { /* If it is an integer, skip forward that many elements in the array */
       target = i + array[i] + 1;   /* Get the position of the next element in the array */
-      i = target;  /* update index in arry */
+      i = target;  /* update index in array */
       
       if (target < array.length) {  /* Check if you are going beyond the end of the array */
         result += array[target]; /* Add decoded element to the result */
